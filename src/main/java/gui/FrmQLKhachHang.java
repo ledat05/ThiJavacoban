@@ -92,12 +92,13 @@ public class FrmQLKhachHang extends JFrame {
         });
         
           btGhiFile.addActionListener((e) -> {
-            if(qlkh.GhiHoaDon(FILE_NHAP)){
+            if(qlkh.GhiHoaDon(FILE_XUAT)){
             JOptionPane.showMessageDialog(this, "Xuất dữ liệu thành công", "Thông báo", JOptionPane.INFORMATION_MESSAGE);
           }else{
                   JOptionPane.showMessageDialog(this, "Xuất dữ liệu thất bại", "Thông báo", JOptionPane.ERROR_MESSAGE);
                   }
         });
+         
     }
      private void loadDataToJTable() {
         model.setRowCount(0);
